@@ -14,7 +14,7 @@ const AccountHeader = () => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        await fetch("https://client-project-ten.vercel.app/api/logout", {
+        await fetch("http://localhost:5000/api/logout", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,
