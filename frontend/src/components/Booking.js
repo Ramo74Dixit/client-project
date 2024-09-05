@@ -34,7 +34,7 @@ function Booking() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/booking/availability",
+          "https://client-project-ten.vercel.app/api/booking/availability",
           {
             method: "GET",
             headers: {
@@ -86,7 +86,7 @@ function Booking() {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/booking", {
+      const response = await fetch("https://client-project-ten.vercel.app/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
